@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: "Montserrat";
+    src: 
+        url(fontes/Montserrat-Regular.otf),
+        url(fontes/Montserrat-Bold.otf),
+        url(fontes/Montserrat-Medium.otf),
+    ;
+
+}
+
+*{
+    --cor-01: #a85b9cff;
+    --cor-02: #773b8cff;
+    --cor-03: #629737ff;
+    --cor-04: #12594dff;
+    --cor-05: #248b83;
+
+    font-family: 'Roboto Condensed',sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+}
+
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* SECTION 01 ================================================================================================================================================ */
+
+#section-01{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+#section-01__header-div{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 20px;
+    padding-left: 40px;
+    text-align: end;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#section-01__header-div > h1{
+    font-size: 2.0em;
+}
+#section-01__header-div > h1 > span:nth-child(1){
+    font-size: 0.6em;
+    color: var(--cor-02);
+}
+#header-antirracista{
+    width: fit-content;
+    margin-left: auto;
+}
+#header-antirracista::after{
+    content: '';
+    display: block;
+    margin-top: -4px;
+    height: 6px;
+    background-image: linear-gradient(to bottom, var(--cor-02), var(--cor-02), transparent);
+}
+
+#section-01__header-div > p:nth-child(3){
+    padding: 7px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-weight: lighter;
+    color: white;
+    background-color: var(--cor-03);
+}
+
+
+#section-publico-alvo{
+    position: absolute;
+    left: 12.5vw;
+    top: 20vh;
+    text-align: end;
+    color: white;
+}
+@media (max-width: 480px) {
+    #section-publico-alvo{
+        left: 12.5vw;
+        top: 55vh;
+    }
+}
+@media (max-width: 305px) {
+    #section-01__header-div{
+        padding-left: 20px;
+    }
+    #section-publico-alvo{
+        left: 5vw;
+    }
+}
+
+
+#section-01__infos-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-right: 20px;
+}
+
+.section-01__info-div{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.section-01__info-div > img{
+    width: 1.75em;
+}
+#RS-img{
+    font-size: 1.5em;
+    padding-right: 5px;
+    color: var(--cor-01);
+}
+
+.section-01__info-div > p{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--cor-04);
+    /* transform: scaleY(1.3); */
+}
+
+.section-01__info-div > div{
+    font-size: 1.0em;
+    font-weight: bold;
+}
+.section-01__info-div:nth-child(even) > div:nth-child(3){color: var(--cor-02);}
+.section-01__info-div:nth-child(odd) > div:nth-child(3){color: var(--cor-04);}
+
+/* 'em até 12x' */
+.section-01__info-div:nth-child(2){ 
+    gap: 0px;
+}
+.section-01__info-div:nth-child(2) > div > p:nth-child(1){
+    font-size: 0.85em;
+    margin-bottom: -7.0px;
+}
+.section-01__info-div:nth-child(2) > div p:nth-child(2){
+    font-size: 2.0em;
+    letter-spacing: -2px;
+    margin-left: -5px;
+}
+
+.section-01__info-div:nth-child(3) > div p{ /* 'inicio das aulas' */
+    font-size: 0.85em;
+    line-height: 0.9em;
+}
+
+#section-01__footer{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px;
+    font-size: 1.25em;
+    color: white;
+}
+
+#section-01__footer > img{
+    width: 48px;
+    filter: brightness(600%);
+    margin-bottom: 30px;
+}
+
+#section-01__footer > div{
+    font-weight: bold;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#section-01__footer > div > img{
+    background-color: var(--cor-03);
+}
+
+#section-01__footer > div > a, #section-01__footer > div > a:visited{
+    padding-right: 5px;
+    color: var(--cor-05);
+}
+
+
+/* SECTION 02 ================================================================================================================================================ */
+
+#section-02{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#section-02__header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding-left: 10px;
+}
+
+/* https://codepen.io/sosuke/pen/Pjoqqp */
+#section-02__header > img{
+    width: 22px;
+    filter: invert(51%) sepia(46%) saturate(526%) hue-rotate(50deg) brightness(94%) contrast(93%);
+}
+
+#section-02__header > div{
+    align-self: stretch;
+    display: flex;
+    flex-grow: 1;
+    overflow-x: hidden;
+}
+#section-02__header > div > img{
+    margin-right: -11px;
+}
+
+
+#section-02__container-professores{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+}
+
+.section-02__card-professor{
+    flex-basis: 122px;
+    height: 122px;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+}
+
+.section-02__card-professor > img{
+    width: 100%;
+}
+
+.section-02__card-professor > p{
+    padding: 4px;
+    background-color: rgba(0,0,0,0.9);
+    font-size: 0.8em;
+    color: var(--cor-01);
+}
+
