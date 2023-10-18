@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: "Montserrat";
+    src: 
+        url(fontes/Montserrat-Regular.otf),
+        url(fontes/Montserrat-Bold.otf),
+        url(fontes/Montserrat-Medium.otf),
+    ;
+}
+
+@font-face {
+    font-family: "Gobold";
+    src: 
+        url(fontes/Gobold\ Lowplus.ttf)
+    ;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -13,22 +29,91 @@
     --cor-02-01: #629737;
 }
 
-body{
+html{
     background-color: black;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    max-width: 600px;
+    margin: auto;
+}
+
+.div-branca{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.botao-01{
+    background-color: var(--cor-02-01);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 0.9em;
+}
+
+.texto-cor-01-01{
+    color: var(--cor-01-01);
+}
+.texto-cor-01-03{
+    color: var(--cor-01-03);
 }
 
 
+/*
+### SECTION 01 #####################################################################################################################################
+*/
+
 #section-01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background-image: url(imagens/design/banner-principal.png);
     background-size: cover;
     height: 100vh;
 }
 
 #section-01__header{
-
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
 }
 
+#section-01__header > p{
+    max-width: 80%;
+    font-size: 0.8em;
+    font-weight: normal;
+}
 
+#section-01__video-container, #section-01__container-botao-cta{
+    align-self: stretch;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#section-01__video-container > iframe{
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+}
+
+#section-01__subheader{
+    font-size: 0.8em;
+    width: 80vw;
+    max-width: 450px;
+    padding: 10px;
+    text-align: center;
+}
 
 
 
