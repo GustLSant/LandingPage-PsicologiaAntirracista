@@ -26,6 +26,7 @@
     --cor-01-01: #AC22DC;
     --cor-01-02: #773B8C;
     --cor-01-03: #432774;
+    --cor-01-04: #6937be;
     --cor-02-01: #629737;
 }
 
@@ -46,6 +47,7 @@ body{
     padding: 10px;
     background-color: white;
     border-radius: 5px;
+    font-size: 0.8em;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -91,7 +93,7 @@ body{
 }
 
 #section-01__header > p{
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: normal;
 }
 
@@ -127,7 +129,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 40px;
     align-items: center;
 }
 
@@ -144,7 +146,6 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    font-size: 0.8em;
     padding-bottom: 150px; /* para caber a imagem do boneco */
 }
 
@@ -187,4 +188,118 @@ body{
     width: 40%;
     max-width: 200px;
     left: 20%;
+}
+
+#section-02__parte-02{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#section-02__div-titulo-professores{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+}
+#section-02__div-titulo-professores > img{
+    max-width: 32px;
+}
+
+#section-02__div-instrucao{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.7em;
+    color: white;
+    opacity: 50%;
+}
+#section-02__div-instrucao > img{
+    filter: brightness(500%);
+    max-width: 1.0em;
+}
+
+#section-02__container-professores{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 10px;
+}
+
+.section-02__card-professor{
+    flex-basis: 150px;
+    height: 150px;
+    display: flex;
+    align-items: end;
+    border-radius: 8px;
+    background-size: contain;
+    background-position: center;
+    overflow: hidden;
+
+    transition: transform 0.15s, filter 0.15s;
+}
+
+.section-02__card-professor:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: brightness(140%);
+}
+
+.section-02__card-professor img{ /* icone de doacao para quilombola */
+    position: absolute;
+    top: -14px;
+    left: -22px;
+    width: 32px;
+}
+
+.section-02__card-professor > p{
+    position: relative;
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,0.9);
+    font-size: 0.8em;
+}
+
+.section-02__card-professor:nth-child(3n+1){justify-content: flex-start; color: var(--cor-01-01);}
+.section-02__card-professor:nth-child(3n+2){justify-content: center; text-align: center; color: var(--cor-02-01);}
+.section-02__card-professor:nth-child(3n+3){justify-content: flex-end; color: var(--cor-01-04);}
+
+#container-card-informacoes-professores{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    backdrop-filter: blur(3px);
+
+    display: none;
+}
+#container-card-informacoes-professores.ativo{
+    display: flex;
+}
+#card-informacoes-professores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#card-informacoes-professores__curriculo{
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#section-02__parte-02 > .section-02__container-infos{
+    margin-top: 40px;
 }
