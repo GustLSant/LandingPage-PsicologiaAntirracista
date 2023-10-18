@@ -271,7 +271,7 @@ body{
     top: 0px;
     left: 0px;
     right: 0px;
-    height: calc(100vh - 40px);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -306,5 +306,7 @@ body{
 
 #card-informacoes-professores > h3{
     font-size: 1.0em;
-    opacity: 50%;
+    opacity: 60%;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
 }
