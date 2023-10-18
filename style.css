@@ -77,17 +77,16 @@ body{
 }
 
 #section-01__header{
-    align-self: flex-start;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
     width: 80%;
     max-width: 500px;
+    text-align: center;
 }
 
 #section-01__header > p{
-    max-width: 80%;
     font-size: 0.8em;
     font-weight: normal;
 }
