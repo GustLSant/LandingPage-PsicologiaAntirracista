@@ -30,6 +30,7 @@ function handleClickCardProfessor(_nomeCompleto, _professor){
 function handleClickCardInformacoes(){
     document.getElementById(idCurriculoProfessor).textContent = ''
     document.getElementById(idCurriculoProfessor).scrollTop = 0
+
     document.getElementById(idContainerCardInformacoesProfessores).classList.remove('ativo')
 }
 

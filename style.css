@@ -286,6 +286,7 @@ body{
 #container-card-informacoes-professores.ativo{
     display: flex;
 }
+
 #card-informacoes-professores{
     display: flex;
     flex-direction: column;
@@ -294,9 +295,23 @@ body{
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.9);
 }
+#container-card-informacoes-professores.ativo #card-informacoes-professores{
+    animation-name: fade-in-card-informacoes-professores;
+    animation-duration: 0.15s;
+}
+@keyframes fade-in-card-informacoes-professores{
+    0%{
+        transform: translateY(-40px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+}
 
 #card-informacoes-professores__curriculo{
-    max-height: 80vh;
+    max-height: 70vh;
     overflow-y: auto;
 }
 
