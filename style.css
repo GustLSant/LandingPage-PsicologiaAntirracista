@@ -79,7 +79,7 @@ body{
     justify-content: space-evenly;
     background-image: url(imagens/design/banner-principal.png);
     background-size: cover;
-    height: 100vh;
+    height: calc(100vh - 20px); /* os 20px sao da barra de navegacao*/
 }
 
 #section-01__header{
@@ -302,4 +302,9 @@ body{
 
 #section-02__parte-02 > .section-02__container-infos{
     margin-top: 40px;
+}
+
+#card-informacoes-professores > h3{
+    font-size: 1.0em;
+    opacity: 50%;
 }

@@ -21,7 +21,7 @@ function handleClickCardProfessor(_nomeCompleto, _professor){
     document.getElementById(idNomeProfessor).textContent = _nomeCompleto
     
     if(curriculos[_professor]){
-        document.getElementById(idCurriculoProfessor).textContent = curriculos[_professor] //+ curriculos[_professor] + curriculos[_professor]
+        document.getElementById(idCurriculoProfessor).textContent = curriculos[_professor] + curriculos[_professor] + curriculos[_professor]
     }
 
     document.getElementById(idContainerCardInformacoesProfessores).classList.add('ativo')
