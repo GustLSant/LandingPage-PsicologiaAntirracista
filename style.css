@@ -22,8 +22,23 @@
     border: none;
 }
 
-a{color: white;}
-a:visited{color: white;}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgb(85, 85, 85);
+    border-radius: 99px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: white; 
+    border-radius: 10px;
+}
 
 :root{
     --cor-01-01: #AC22DC;
@@ -48,6 +63,9 @@ body{
     max-width: 1200px;
     margin: auto;
 }
+
+a{color: white;}
+a:visited{color: white;}
 
 .div-branca{
     padding: 10px;
