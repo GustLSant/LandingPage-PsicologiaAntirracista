@@ -91,7 +91,7 @@ body{
     justify-content: space-evenly;
     background-image: url(imagens/design/banner-principal.png);
     background-size: cover;
-    height: calc(100vh - 40px); /* os 40px sao da barra de navegacao*/
+    min-height: calc(100vh - 40px); /* os 40px sao da barra de navegacao*/
 }
 
 #section-01__header{
@@ -384,17 +384,18 @@ body{
     gap: 15px;
     color: white;
     background-color: var(--cor-01-03);
-    padding: 20px 20px 20px 0px;
+    padding: 20px 0px;
 }
 
 #section-03__container-conteudo > h2{
     padding: 15px;
-    width: 80%;
+    width: 75%;
     background-color: black;
 }
 
 #section-03__container-conteudo > ul{
     padding-left: 30px;
+    padding-right: 20px;
     font-size: 0.9em;
 }
 
@@ -429,6 +430,7 @@ body{
 #section-04__container-cards{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -479,6 +481,11 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+@media (max-width: 350px) {
+    #section-04__continer-wpp-cartoes{
+        flex-direction: column;
+    }
 }
 
 #section-04__continer-wpp-cartoes > div{
@@ -548,6 +555,10 @@ body{
 .section-05__pergunta:hover{
     cursor: pointer;
     filter: brightness(125%);
+}
+
+@media (max-width: 391px){
+    .section-05__pergunta:nth-child(5){max-height: 35px;} /* eh a pergunta de duas linhas */
 }
 
 .section-05__pergunta > p:nth-child(1){
