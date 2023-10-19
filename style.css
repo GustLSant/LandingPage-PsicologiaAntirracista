@@ -89,7 +89,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-image: url(imagens/design/banner-principal.png);
+    background-image: url(imagens/design/banner-principal-jpg.jpg);
     background-size: cover;
     min-height: calc(100vh - 40px); /* os 40px sao da barra de navegacao*/
 }
@@ -147,7 +147,7 @@ body{
 
 .section-02__borda{
     width: 100%;
-    background-image: url(imagens/design/antrAtivo\ 2.png);
+    background-image: url(imagens/design/enfeite-triangulos-verdes.jpg);
     background-size: cover;
     height: 30px;
 }
@@ -373,7 +373,7 @@ body{
 #section-03__imagem-esquerda{
     width: 30%;
     max-width: 200px;
-    background-image: url(imagens/design/antrrAtivo\ 5.png);
+    background-image: url(imagens/design/barra-vertical-conteudos.jpg);
     background-size: cover;
 }
 
@@ -422,7 +422,7 @@ body{
 .section-04__borda{
     align-self: stretch;
     height: 30px;
-    background-image: url(imagens/design/antrAtivo\ 5.png);
+    background-image: url(imagens/design/barra-horizontal-01.jpg);
     background-size: cover;
     background-repeat: repeat-x;
 }
@@ -454,7 +454,7 @@ body{
     display: flex;
     justify-content: center;
     color: white;
-    background-image: url(imagens/design/antrAtivo\ 1.png);
+    background-image: url(imagens/design/barra-roxa-rep.png);
     background-size: 60%;
     background-repeat: repeat-x;
     background-position: right center;
