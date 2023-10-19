@@ -35,3 +35,13 @@ function handleClickCardInformacoes(){
 }
 
 
+function onClickFaleConosco(){
+    window.open('https://wa.me/5579991218675', '_blank')
+}
+
+
+function handleClickPergunta(_id){
+    document.getElementById(_id).classList.toggle('ativo')
+}
+
+

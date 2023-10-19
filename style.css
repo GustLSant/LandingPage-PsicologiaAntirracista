@@ -22,6 +22,9 @@
     border: none;
 }
 
+a{color: white;}
+a:visited{color: white;}
+
 :root{
     --cor-01-01: #AC22DC;
     --cor-01-02: #773B8C;
@@ -33,6 +36,7 @@
 html{
     background-color: black;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -59,6 +63,13 @@ body{
     border-radius: 5px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 0.9em;
+    text-decoration: none;
+    transition: transform 0.15s, filter 0.15s;
+}
+.botao-01:hover{
+    filter: brightness(125%);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .texto-cor-01-01{
@@ -249,7 +260,7 @@ body{
 .section-02__card-professor:hover{
     cursor: pointer;
     transform: scale(1.1);
-    filter: brightness(140%);
+    filter: brightness(125%);
 }
 
 .section-02__card-professor img{ /* icone de doacao para quilombola */
@@ -484,6 +495,12 @@ body{
     border-radius: 5px;
     font-size: 0.8em;
     background-color: white;
+
+    transition: transform 0.15s;
+}
+#section-04__card-wpp:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 #section-04__card-wpp > img{
     width: 28px;
@@ -495,3 +512,81 @@ body{
 }
 
 
+/*
+### SECTION 05 #####################################################################################################################################
+*/
+
+#section-05{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+#section-05__container-perguntas{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 20px;
+    color: white;
+}
+
+.section-05__pergunta{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    background-color: var(--cor-01-03);
+
+    max-height: 20px;
+    overflow-y: hidden;
+    transition: max-height 0.15s, filter 0.15s;
+}
+.section-05__pergunta:hover{
+    cursor: pointer;
+    filter: brightness(125%);
+}
+
+.section-05__pergunta > p:nth-child(1){
+    font-size: 1.1em;
+}
+.section-05__pergunta > p:nth-child(2){
+    opacity: 0%;
+    transition: opacity 0.15s;
+}
+
+.section-05__pergunta.ativo{
+    max-height: 200px;
+}
+.section-05__pergunta.ativo > p:nth-child(2){
+    opacity: 100%;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    font-size: 0.6em;
+    text-align: center;
+    color: white;
+}
+
+footer > img{
+    width: 32px;
+}
+
+footer > p{
+    padding: 0px 20px;
+}
+
+#footer_politica-privacidade{
+    align-self: stretch;
+    padding: 5px;
+    background-color: var(--cor-01-03);
+}

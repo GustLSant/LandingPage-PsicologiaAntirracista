@@ -40,9 +40,9 @@
         </div>
 
         <div id="section-01__container-botao-cta">
-            <div class="botao-01">
+            <a class="botao-01" href="#section-04">
                 <p>Adquirir Agora</p>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -230,7 +230,7 @@
             </div>
 
             <div id="section-04__continer-wpp-cartoes">
-                <div id="section-04__card-wpp">
+                <div id="section-04__card-wpp" onclick="onClickFaleConosco()">
                     <p>Fale Conosco</p>
                     <img src="imagens/whatsapp-logo-svg.svg" alt="icone do whatsapp">
                 </div>
@@ -243,6 +243,85 @@
 
         <div class="section-04__borda"></div>
     </section>
+
+    <section id="section-05">
+        <div id="section-02__div-titulo-professores">
+            <img src="imagens/design/antrAtivo 8.png" alt="seção do time de professores">
+            <p>FAQ <br> Perguntas Frequentes</p>
+            <img src="imagens/design/antrAtivo 8.png" alt="seção do time de professores">
+        </div>
+
+        <div id="section-05__container-perguntas">
+            <div class="section-05__pergunta" id="pergunta-01" onclick="handleClickPergunta('pergunta-01')">
+                <p>Para quem é o curso?</p>
+                <p>
+                    Para psicólogos ou estudantes de psicologia, de quaisquer identificações étnico-raciais, e que queiram desenvolver uma prática antirracista na Psicologia.
+                </p>
+            </div>
+
+            <div class="section-05__pergunta" id="pergunta-02" onclick="handleClickPergunta('pergunta-02')">
+                <p>Este valor de 429 é mensalidade?</p>
+                <p>
+                    Não, por este valor você já recebe acesso ao curso por 1 ano.
+                </p>
+            </div>
+
+            <div class="section-05__pergunta" id="pergunta-03" onclick="handleClickPergunta('pergunta-03')">
+                <p>Posso parcelar o curso?</p>
+                <p>
+                    Sim! O curso pode ser parcelado em até 12x. Se tiver alguma dificuldade, fale conosco!
+                </p>
+            </div>
+
+            <div class="section-05__pergunta" id="pergunta-04" onclick="handleClickPergunta('pergunta-04')">
+                <p>Em qual horário ocorrem as aulas?</p>
+                <p>
+                    As aulas são assíncronas. Ou seja, elas ficarão gravadas e disponíveis na plataforma para que você possa assistir de acordo com sua disponibilidade.
+                </p>
+            </div>
+
+            <div class="section-05__pergunta" id="pergunta-05" onclick="handleClickPergunta('pergunta-05')">
+                <p>As aulas ficarão disponíveis por quanto tempo?</p>
+                <p>
+                    O curso ficará disponível por 1 ano.
+                </p>
+            </div>
+
+            <div class="section-05__pergunta" id="pergunta-06" onclick="handleClickPergunta('pergunta-06')">
+                <p>Sou estudante, posso fazer o curso?</p>
+                <p>
+                    Com certeza. O curso é indicado para estudantes e profissionais da Psicologia.
+                </p>
+            </div>
+
+            <div class="section-05__pergunta" id="pergunta-07" onclick="handleClickPergunta('pergunta-07')">
+                <p>Qual o valor total do curso?</p>
+                <p>
+                    À vista, o curso custa apenas R$ 429,00
+                </p>
+            </div>
+
+            <div class="section-05__pergunta" id="pergunta-08" onclick="handleClickPergunta('pergunta-08')">
+                <p>Quais as formas de pagamento?</p>
+                <p>
+                    Você pode pagar via PIX, boleto ou cartão de crédito.
+                </p>
+            </div>
+
+            <div class="section-05__pergunta" id="pergunta-09" onclick="handleClickPergunta('pergunta-09')">
+                <p>Tem vagas afirmativas?</p>
+                <p>
+                    Sim, é um compromisso nosso. Repetidamente iremos disponibilizar seleções para estudantes de baixa renda, LGBTQ+, negras e indígenas e de microcidades. Indicamos que nos acompanhe no Instagram para ter acesso a essas informações (@_afirmativa).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="imagens/logo-afirmativa-roxo-peq.png" alt="logo da afirmativa">
+        <p>AFIRMATIVA SERVIÇOS ACADEMICOS E PUBLICAÇÕES LTDA | CNPJ 45.555.897/0001-58 |Rua Jacinto Uchoa de Mendonça, 223 Bairro Grageru, Aracaju/SE - CEP 49.026-160 | 2023</p>
+        <a id="footer_politica-privacidade" href="https://www.google.com/" target="_blank" rel="nofollow">Política de Privacidade</a>
+    </footer>
 
     <script type="text/javascript" src="script.js"></script>
 </body>
