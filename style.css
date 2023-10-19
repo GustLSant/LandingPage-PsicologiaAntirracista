@@ -31,6 +31,8 @@ a:visited{color: white;}
     --cor-01-03: #432774;
     --cor-01-04: #6937be;
     --cor-02-01: #629737;
+
+    --desktop-min-width: 853px;
 }
 
 html{
@@ -43,7 +45,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    max-width: 600px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -132,6 +134,23 @@ body{
     text-align: center;
 }
 
+@media (min-width: 853px) {
+    #section-01{
+        font-size: 1.4em;
+        gap: 20px;
+    }
+
+    #section-01__header, #section-01__subheader{
+        max-width: 800px;
+    }
+
+    #section-01__video-container > iframe{
+        width: 80%;
+        max-width: 500px;
+        height: 250px;
+    }
+}
+
 
 /*
 ### SECTION 02 #####################################################################################################################################
@@ -202,6 +221,22 @@ body{
     max-width: 200px;
     left: 20%;
 }
+
+@media (min-width: 853px) {
+    #section-02__parte-01{
+        font-size: 1.4em;
+        gap: 35px;
+    }
+
+    #section-02__parte-01 .div-branca{
+        max-width: 800px;
+    }
+}
+
+
+/*
+### SECTION 02.2 ################################################################################################################################## #
+*/
 
 #section-02__parte-02{
     display: flex;
@@ -360,6 +395,23 @@ body{
     cursor: pointer;
 }
 
+@media (min-width: 853px) {
+    #section-02__parte-02{
+        margin-top: 20px;
+        font-size: 1.4em;
+        gap: 30px;
+    }
+
+    .section-02__card-professor{
+        flex-basis: 175px;
+        height: 175px;
+    }
+
+    .section-02__card-professor > p{
+        font-size: 0.6em;
+    }
+}
+
 
 /*
 ### SECTION 03 #####################################################################################################################################
@@ -398,6 +450,12 @@ body{
     padding-left: 30px;
     padding-right: 20px;
     font-size: 0.9em;
+}
+
+@media (min-width: 853px) {
+    #section-03{
+        font-size: 1.4em;
+    }
 }
 
 
@@ -519,6 +577,16 @@ body{
     width: 142px;
 }
 
+@media (min-width: 853px) {
+    #section-04{
+        font-size: 1.4em;
+    }
+
+    #section-04 .div-branca{
+        max-width: 800px;
+    }
+}
+
 
 /*
 ### SECTION 05 #####################################################################################################################################
@@ -601,4 +669,23 @@ footer > p{
     align-self: stretch;
     padding: 5px;
     background-color: var(--cor-01-03);
+}
+
+@media (min-width: 853px) {
+    #section-05{
+        font-size: 1.4em;
+    }
+
+    #section-05__container-perguntas{
+        font-size: 0.8em;
+        max-width: 800px;
+    }
+
+    footer{
+        font-size: 0.8em;
+    }
+
+    footer > p{
+        max-width: 800px;
+    }
 }
