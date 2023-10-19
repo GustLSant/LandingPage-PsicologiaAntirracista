@@ -270,6 +270,21 @@ body{
 .section-02__card-professor:nth-child(3n+2){justify-content: center; text-align: center; color: var(--cor-02-01);}
 .section-02__card-professor:nth-child(3n+3){justify-content: flex-end; color: var(--cor-01-04);}
 
+#section-02__div-quilombo{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 40px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.7em;
+}
+#section-02__div-quilombo > img{width: 28px;}
+#section-02__div-quilombo span{font-weight: bold;}
+
 #container-card-informacoes-professores{
     position: fixed;
     top: 0px;
@@ -298,6 +313,7 @@ body{
     gap: 10px;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.9);
+    max-width: 600px;
 }
 #container-card-informacoes-professores.ativo #card-informacoes-professores{
     animation-name: fade-in-card-informacoes-professores;
@@ -319,21 +335,6 @@ body{
     overflow-y: auto;
 }
 
-#section-02__div-quilombo{
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-    padding: 0px 40px;
-    text-align: center;
-    color: white;
-    font-family: sans-serif;
-    font-size: 0.7em;
-}
-#section-02__div-quilombo > img{width: 28px;}
-#section-02__div-quilombo span{font-weight: bold;}
-
 #section-02__parte-02 > .section-02__container-infos{
     margin-top: 30px;
 }
@@ -343,6 +344,9 @@ body{
     opacity: 60%;
     letter-spacing: 0.1em;
     text-decoration: underline;
+}
+#card-informacoes-professores > h3:hover{
+    cursor: pointer;
 }
 
 
@@ -485,9 +489,7 @@ body{
     width: 28px;
 }
 
-#section-04__card-cartoes{
-
-}
+/* #section-04__card-cartoes{} */
 #section-04__card-cartoes > img{
     width: 142px;
 }
