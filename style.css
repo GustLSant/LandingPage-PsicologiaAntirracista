@@ -170,6 +170,7 @@ body{
 .section-02__container-infos:nth-child(2){
     align-self: flex-end;
     text-align: right;
+    margin-right: 10px;
     max-width: 70%;
 }
 
@@ -201,6 +202,7 @@ body{
     display: flex;
     gap: 10px;
     align-items: center;
+    text-align: center;
     color: white;
 }
 #section-02__div-titulo-professores > img{
@@ -210,6 +212,7 @@ body{
 #section-02__div-instrucao{
     display: flex;
     align-items: center;
+    text-align: center;
     gap: 5px;
     font-size: 0.7em;
     color: white;
