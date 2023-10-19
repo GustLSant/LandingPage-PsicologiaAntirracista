@@ -22,20 +22,32 @@
             <iframe 
                 width="560" 
                 height="315" 
-                src="https://www.youtube.com/embed/RSrTi232EjM?si=qlCMUVlk_Cp5qvVu" 
+                src="https://www.youtube.com/embed/RSrTi232EjM" 
                 title="YouTube video player" 
                 frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                srcdoc="
+                    <style>
+                        *{padding:0;margin:0;overflow:hidden}
+                        html,body{height:100%}
+                        img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}
+                        span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}
+                    </style>
+                    <a href=https://www.youtube.com/embed/RSrTi232EjM?autoplay=1>
+                        <img src=https://img.youtube.com/vi/RSrTi232EjM/hqdefault.jpg alt='video curso psicologia antirracista'>
+                        <span>▶</span>
+                    </a>
+                "
                 allowfullscreen>
             </iframe>
         </div>
 
         <div id="section-01__subheader" class="div-branca">
-            <p class="texto-cor-01-01">
-                Uma Psicologia Antirracista é necessária para atendermos de forma efetiva e acolhedora.
-            </p>
             <p>
                 Ainda fazemos uma Psicologia branca para pessoas brancas. Precisamos mudar isso.
+            </p>
+            <p class="texto-cor-01-01">
+                Uma Psicologia Antirracista é necessária para atendermos de forma efetiva e acolhedora.
             </p>
         </div>
 
