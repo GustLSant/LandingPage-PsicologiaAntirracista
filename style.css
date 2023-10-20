@@ -346,6 +346,9 @@ a:visited{color: white;}
     color: white;
     font-family: sans-serif;
     font-size: 0.7em;
+
+    align-self: flex-end;
+    text-align: end;
 }
 #section-02__div-quilombo > img{width: 28px;}
 #section-02__div-quilombo span{font-weight: bold;}
