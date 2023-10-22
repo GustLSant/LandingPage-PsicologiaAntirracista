@@ -35,6 +35,11 @@ function handleClickCardInformacoes(){
 }
 
 
+function handleClickCTA(){
+    window.open('https://pay.kiwify.com.br/x2R84IT', '_blank')
+}
+
+
 function onClickFaleConosco(){
     window.open('https://wa.me/5579991218675', '_blank')
 }
