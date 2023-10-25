@@ -565,6 +565,10 @@ a:visited{color: white;}
     width: 24px;
 }
 
+#section-04__continer-cta .botao-01{
+    background-color: #72ff00;
+}
+
 #section-04__continer-wpp-cartoes{
     display: flex;
     justify-content: center;
