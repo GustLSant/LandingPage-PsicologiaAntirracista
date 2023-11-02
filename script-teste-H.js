@@ -1,5 +1,8 @@
 document.getElementById('p').textContent = window.innerHeight
 
-function handleResize(){
+printarAltura()
+
+async function printarAltura(){
     document.getElementById('p').textContent = window.innerHeight
+    setTimeout(printarAltura, 500)
 }
